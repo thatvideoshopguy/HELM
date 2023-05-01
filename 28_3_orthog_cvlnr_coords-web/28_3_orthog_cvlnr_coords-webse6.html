@@ -1,0 +1,7704 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="HTML Tidy for HTML5 for Linux version 5.2.0" name="generator"/>
+  <title>
+   Engineering Example 3
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; minimum-scale=1.0; user-scalable=yes;" name="viewport"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+  <link href="28_3_orthog_cvlnr_coords-web.css" rel="stylesheet" type="text/css"/>
+  <link href="additional.css" rel="stylesheet" type="text/css"/>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ mml2jax: { preview: ["[maths rendering]"]}, 
+  "fast-preview": {disabled: true}, 
+  explorer:{ subtitle: true }, 
+  displayAlign: "center",  
+  MatchWebFonts: { 
+  matchFor: { "HTML-CSS": true, NativeMML: false, SVG: false }, 
+  fontCheckDelay: 2000, 
+  fontCheckTimeout: 30 * 1000 
+  }, 
+  "HTML-CSS": { 
+  preferredFont: "STIX",  
+  availableFonts: ["STIX","TeX"],  
+  webFont: "STIX-Web",  
+  linebreaks: { automatic: true, width: "90% container" } 
+  }, 
+  SVG: {  
+  font: "STIX-Web", 
+  linebreaks: { automatic: false, width: "90% container" } 
+  }, 
+  menuSettings: { collapsible: false, autocollapse: false, explorer: false } 
+  });
+  </script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Register.MessageHook("End Math", function (msg) { 
+  var nodes = Array.from(msg[1].querySelectorAll('.MJX_Assistive_MathML [id]')); 
+  while (nodes.length) { 
+  nodes.shift().removeAttribute('id'); 
+  } 
+  }, 20);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full" type="text/javascript">
+  </script>
+  <style type="text/css">
+   ".MathJax_MathML" {text-indent: 0;}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3KVNKQ1MQ">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3KVNKQ1MQ');
+  </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <link href="toplayer.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="container">
+   <nav aria-labelledby="topnav">
+    <div id="topnav">
+     [
+     <a href="#main">
+      Skip navigation
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-webse5.html">
+      prev
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-webse5.html#tail28_3_orthog_cvlnr_coords-webse5.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="#tail28_3_orthog_cvlnr_coords-webse6.html">
+      tail
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-web.html#28_3_orthog_cvlnr_coords-webse6.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <main id="main" role="main">
+    <h3 class="sectionHead">
+     <span class="titlemark">
+      6
+     </span>
+     <a href="28_3_orthog_cvlnr_coords-web.html#QQ2-9-39" id="x9-390006">
+      Engineering Example 3
+     </a>
+    </h3>
+    <!--l. 714
+-->
+    <h4 class="subsectionHead">
+     <span class="titlemark">
+      6.1
+     </span>
+     <a href="28_3_orthog_cvlnr_coords-web.html#QQ2-9-40" id="x9-400006.1">
+      Electric potential
+     </a>
+    </h4>
+    <!--l. 716
+-->
+    <p class="noindent">
+     <strong>
+      Introduction
+     </strong>
+    </p>
+    <!--l. 717
+-->
+    <p class="noindent">
+     There is a scalar quantity
+     <!--l. 717
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        V
+       </mi>
+      </mrow>
+     </math>
+     , called the electric potential, which satisfies
+    </p>
+    <!--l. 718
+-->
+    <p class="noindent">
+     <!--l. 718
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mspace class="qquad" width="2em">
+       </mspace>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mo class="MathClass-op">
+          &nabla;
+         </mo>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mi>
+        V
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mo class="MathClass-bin">
+        &minus;
+       </mo>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     where
+     <!--l. 718
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     is the electric field.
+    </p>
+    <!--l. 719
+-->
+    <p class="noindent">
+     It is often easier to handle scalar fields rather than vector fields. It is therefore convenient to work with
+     <!--l. 719
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        V
+       </mi>
+      </mrow>
+     </math>
+     and then derive
+     <!--l. 719
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     from it.
+    </p>
+    <!--l. 720
+-->
+    <p class="noindent">
+     <strong>
+      Problem in words
+     </strong>
+    </p>
+    <!--l. 721
+-->
+    <p class="noindent">
+     Given the electric potential, find the electric field.
+    </p>
+    <!--l. 722
+-->
+    <p class="noindent">
+     <strong>
+      Mathematical statement of problem
+     </strong>
+    </p>
+    <!--l. 723
+-->
+    <p class="noindent">
+     For a point charge,
+     <!--l. 723
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        Q
+       </mi>
+      </mrow>
+     </math>
+     , the potential
+     <!--l. 723
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        V
+       </mi>
+      </mrow>
+     </math>
+     is given by
+    </p>
+    <!--l. 723
+-->
+    <p class="noindent">
+     <!--l. 723
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mspace class="qquad" width="2em">
+       </mspace>
+       <mi>
+        V
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mfrac>
+        <mrow>
+         <mi>
+          Q
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          4
+         </mn>
+         <mi>
+          &pi;
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            &varepsilon;
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+         </msub>
+         <mi>
+          r
+         </mi>
+        </mrow>
+       </mfrac>
+      </mrow>
+     </math>
+    </p>
+    <!--l. 724
+-->
+    <p class="noindent">
+     Verify, using spherical polar coordinates, that
+     <!--l. 724
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mo class="MathClass-bin">
+        &minus;
+       </mo>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mo class="MathClass-op">
+          &nabla;
+         </mo>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mi>
+        V
+       </mi>
+      </mrow>
+     </math>
+     is indeed
+     <!--l. 725
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mfrac>
+        <mrow>
+         <mi>
+          Q
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          4
+         </mn>
+         <mi>
+          &pi;
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            &varepsilon;
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+         </msub>
+         <msup>
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+       </mfrac>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mover accent="true">
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mo class="MathClass-op">
+           ̂
+          </mo>
+         </mover>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+    </p>
+    <!--l. 726
+-->
+    <p class="noindent">
+     <strong>
+      Mathematical analysis
+     </strong>
+    </p>
+    <!--l. 727
+-->
+    <p class="noindent">
+     In spherical polar coordinates:
+     <!--tex4ht:inline
+-->
+    </p>
+    <!--l. 728
+-->
+    <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+      <mtr>
+       <mtd class="eqnarray-1">
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mi>
+         V
+        </mi>
+       </mtd>
+       <mtd class="eqnarray-2">
+        <mo class="MathClass-rel">
+         =
+        </mo>
+       </mtd>
+       <mtd class="eqnarray-3">
+        <mfrac>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           r
+          </mi>
+         </mrow>
+        </mfrac>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+        </mfrac>
+        <mfrac>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           &theta;
+          </mi>
+         </mrow>
+        </mfrac>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &varphi;
+          </mi>
+         </mrow>
+        </mfrac>
+        <mfrac>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           &varphi;
+          </mi>
+         </mrow>
+        </mfrac>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &varphi;
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+       </mtd>
+       <mtd class="eqnarray-3">
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+        <mo class="MathClass-rel">
+         =
+        </mo>
+       </mtd>
+       <mtd class="eqnarray-3">
+        <mfrac>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           r
+          </mi>
+         </mrow>
+        </mfrac>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mspace class="quad" width="1em">
+        </mspace>
+        <mstyle class="text">
+         <mtext>
+          &nbsp;as&nbsp;the&nbsp;other&nbsp;partial&nbsp;derivatives&nbsp;are&nbsp;zero
+         </mtext>
+        </mstyle>
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+       </mtd>
+       <mtd class="eqnarray-3">
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+        <mo class="MathClass-rel">
+         =
+        </mo>
+       </mtd>
+       <mtd class="eqnarray-3">
+        <mfrac>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &part;
+          </mi>
+          <mi>
+           r
+          </mi>
+         </mrow>
+        </mfrac>
+        <mfenced close="]" open="[" separators="">
+         <mrow>
+          <mfrac>
+           <mrow>
+            <mi>
+             Q
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             4
+            </mn>
+            <mi>
+             &pi;
+            </mi>
+            <msub>
+             <mrow>
+              <mi>
+               &varepsilon;
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+            </msub>
+            <mi>
+             r
+            </mi>
+           </mrow>
+          </mfrac>
+         </mrow>
+        </mfenced>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+       </mtd>
+       <mtd class="eqnarray-3">
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+      <mtr>
+       <mtd class="eqnarray-1">
+       </mtd>
+       <mtd class="eqnarray-2">
+        <mo class="MathClass-rel">
+         =
+        </mo>
+       </mtd>
+       <mtd class="eqnarray-3">
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <mfrac>
+         <mrow>
+          <mi>
+           Q
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           4
+          </mn>
+          <mi>
+           &pi;
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             &varepsilon;
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+          </msub>
+          <msup>
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfrac>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+        <mspace class="qquad" width="2em">
+        </mspace>
+       </mtd>
+       <mtd class="eqnarray-4">
+        <mtext class="eqnarray">
+        </mtext>
+       </mtd>
+      </mtr>
+     </mtable>
+    </math>
+    <!--l. 735
+-->
+    <p class="nopar">
+     <strong>
+      Interpretation
+     </strong>
+    </p>
+    <!--l. 737
+-->
+    <p class="noindent">
+     So
+     <!--l. 737
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          E
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mfrac>
+        <mrow>
+         <mi>
+          Q
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          4
+         </mn>
+         <mi>
+          &pi;
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            &varepsilon;
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+         </msub>
+         <msup>
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+       </mfrac>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mover accent="true">
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mo class="MathClass-op">
+           ̂
+          </mo>
+         </mover>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     as required.
+    </p>
+    <!--l. 739
+-->
+    <p class="noindent">
+     This is a form of Coulomb&rsquo;s Law. A positive charge will experience a positive repulsion radially
+     <strong>
+      outwards
+     </strong>
+     in the field of another positive charge.
+    </p>
+    <h5 class="likesubsubsectionHead">
+     <a href="#x9-410006.1" id="x9-410006.1">
+      Example 26
+     </a>
+    </h5>
+    <!--l. 741
+-->
+    <p class="noindent">
+     Using spherical polar coordinates, find
+     <!--l. 741
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mo class="MathClass-op">
+          &nabla;
+         </mo>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mo class="MathClass-bin">
+        &sdot;
+       </mo>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          F
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     for the following vector functions.
+    </p>
+    <!--l. 743
+-->
+    <!--l. 745
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-41002x1">
+      <!--l. 746
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         r
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x9-41004x2">
+      <!--l. 747
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x9-41006x3">
+      <!--l. 748
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         r
+        </mi>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &varphi;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         r
+        </mi>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &varphi;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+     </li>
+    </ol>
+    <!--l. 805
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x9-420006.1" id="x9-420006.1">
+      Solution
+     </a>
+    </h5>
+    <!--l. 805
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-42002x1">
+      <!--tex4ht:inline
+-->
+      <!--l. 805
+-->
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+        <mtr>
+         <mtd class="eqnarray-1">
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &sdot;
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 3
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mn>
+             3
+            </mn>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mn>
+             0
+            </mn>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mn>
+             0
+            </mn>
+           </mrow>
+          </mfenced>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mn>
+           3
+          </mn>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+       </mtable>
+      </math>
+      <!--l. 805
+-->
+      <p class="nopar">
+       Note :- in Cartesian coordinates, the corresponding vector is
+       <!--l. 805
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-rel">
+          =
+         </mo>
+         <mi>
+          x
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mi>
+            i
+           </mi>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mi>
+          y
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mi>
+            j
+           </mi>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mi>
+          z
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+        </mrow>
+       </math>
+       with
+       <!--l. 805
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mo class="MathClass-op">
+            &nabla;
+           </mo>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          &sdot;
+         </mo>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-rel">
+          =
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo class="MathClass-rel">
+          =
+         </mo>
+         <mn>
+          3
+         </mn>
+        </mrow>
+       </math>
+       (hence consistency).
+      </p>
+     </li>
+     <li class="enumerate" id="x9-42005x2">
+      <!--tex4ht:inline
+-->
+      <!--l. 805
+-->
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+        <mtr>
+         <mtd class="eqnarray-1">
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &sdot;
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 4
+                </mn>
+               </mrow>
+              </msup>
+              <msup>
+               <mrow>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mn>
+             4
+            </mn>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               3
+              </mn>
+             </mrow>
+            </msup>
+            <msup>
+             <mrow>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             &theta;
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mn>
+             0
+            </mn>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mn>
+             0
+            </mn>
+           </mrow>
+          </mfenced>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mn>
+           4
+          </mn>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &theta;
+          </mi>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+       </mtable>
+      </math>
+      <!--l. 805
+-->
+     </li>
+     <li class="enumerate" id="x9-42008x3">
+      <!--tex4ht:inline
+-->
+      <!--l. 805
+-->
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+        <mtr>
+         <mtd class="eqnarray-1">
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &sdot;
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <msub>
+               <mrow>
+                <mi>
+                 F
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mi>
+               r
+              </mi>
+              <mo class="MathClass-bin">
+               &times;
+              </mo>
+              <mspace class="thinspace" width="0.3em">
+              </mspace>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               cos
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 3
+                </mn>
+               </mrow>
+              </msup>
+              <msup>
+               <mrow>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 3
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               &part;
+              </mi>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+            </mfrac>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mo class="qopname">
+               cos
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mn>
+             3
+            </mn>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <msup>
+             <mrow>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             &theta;
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               3
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             cos
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mspace class="thinspace" width="0.3em">
+            </mspace>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &varphi;
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mn>
+             0
+            </mn>
+           </mrow>
+          </mfenced>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mn>
+           3
+          </mn>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &theta;
+          </mi>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           cot
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &theta;
+          </mi>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &varphi;
+          </mi>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+       </mtable>
+      </math>
+      <!--l. 805
+-->
+     </li>
+    </ol>
+    <!--l. 807
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x9-430006.1" id="x9-430006.1">
+      Example 27
+     </a>
+    </h5>
+    <!--l. 808
+-->
+    <p class="noindent">
+     Find
+     <!--l. 808
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mo class="MathClass-op">
+          &nabla;
+         </mo>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mo class="MathClass-bin">
+        &times;
+       </mo>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          F
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     for the following vector fields
+     <!--l. 809
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mi>
+          F
+         </mi>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 812
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-43002x1">
+      <!--l. 813
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           k
+          </mi>
+         </mrow>
+        </msup>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="MathClass-op">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      , where
+      <!--l. 813
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         k
+        </mi>
+       </mrow>
+      </math>
+      is a constant
+     </li>
+     <li class="enumerate" id="x9-43004x2">
+      <!--l. 814
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mi>
+         &theta;
+        </mi>
+        <mspace class="thinspace" width="0.3em">
+        </mspace>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &varphi;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+     </li>
+    </ol>
+    <!--l. 885
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x9-440006.1" id="x9-440006.1">
+      Solution
+     </a>
+    </h5>
+    <!--l. 885
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-44002x1">
+      <!--tex4ht:inline
+-->
+      <!--l. 885
+-->
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+        <mtr>
+         <mtd class="eqnarray-1">
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <mo class="MathClass-bin">
+           &times;
+          </mo>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="|" open="|" separators="">
+           <mrow>
+            <mtable align="axis" class="array" columnlines="none none" equalcolumns="false" equalrows="false" style="">
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    r
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &theta;
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mspace class="thinspace" width="0.3em">
+               </mspace>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &varphi;
+                   </mi>
+                  </mrow>
+                  <mo class="qopname">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+             </mtr>
+             <!--ccc
+-->
+            </mtable>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="|" open="|" separators="">
+           <mrow>
+            <mtable align="axis" class="array" columnlines="none none" equalcolumns="false" equalrows="false" style="">
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    r
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &theta;
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mspace class="thinspace" width="0.3em">
+               </mspace>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &varphi;
+                   </mi>
+                  </mrow>
+                  <mo class="qopname">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  k
+                 </mi>
+                </mrow>
+               </msup>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="MathClass-bin">
+                &times;
+               </mo>
+               <mn>
+                0
+               </mn>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mo class="MathClass-bin">
+                &times;
+               </mo>
+               <mn>
+                0
+               </mn>
+              </mtd>
+             </mtr>
+             <!--ccc
+-->
+            </mtable>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="" open="[" separators="">
+           <mrow>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mn>
+                 0
+                </mn>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mn>
+                 0
+                </mn>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <msup>
+                 <mrow>
+                  <mi>
+                   r
+                  </mi>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   k
+                  </mi>
+                 </mrow>
+                </msup>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mn>
+                 0
+                </mn>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <mi>
+             r
+            </mi>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mfenced close="]" open="" separators="">
+           <mrow>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mn>
+                 0
+                </mn>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <msup>
+                 <mrow>
+                  <mi>
+                   r
+                  </mi>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   k
+                  </mi>
+                 </mrow>
+                </msup>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mspace class="thinspace" width="0.3em">
+            </mspace>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+               <mo class="qopname">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mn>
+           0
+          </mn>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mo class="MathClass-op">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mn>
+           0
+          </mn>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-op">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mn>
+           0
+          </mn>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="MathClass-op">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+       </mtable>
+      </math>
+      <!--l. 885
+-->
+     </li>
+     <li class="enumerate" id="x9-44005x2">
+      <!--tex4ht:inline
+-->
+      <!--l. 885
+-->
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mtable class="eqnarray-star" columnalign="right center left" displaystyle="true">
+        <mtr>
+         <mtd class="eqnarray-1">
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &times;
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="|" open="|" separators="">
+           <mrow>
+            <mtable align="axis" class="array" columnlines="none none" equalcolumns="false" equalrows="false" style="">
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    r
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &theta;
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mspace class="thinspace" width="0.3em">
+               </mspace>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &varphi;
+                   </mi>
+                  </mrow>
+                  <mo class="qopname">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <msub>
+                <mrow>
+                 <mi>
+                  F
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </msub>
+              </mtd>
+             </mtr>
+             <!--ccc
+-->
+            </mtable>
+           </mrow>
+          </mfenced>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="|" open="|" separators="">
+           <mrow>
+            <mtable align="axis" class="array" columnlines="none none" equalcolumns="false" equalrows="false" style="">
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    r
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &theta;
+                   </mi>
+                  </mrow>
+                  <mo class="MathClass-op">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mspace class="thinspace" width="0.3em">
+               </mspace>
+               <munder accentunder="false" class="mml-underline">
+                <mrow>
+                 <mover accent="true">
+                  <mrow>
+                   <mi>
+                    &varphi;
+                   </mi>
+                  </mrow>
+                  <mo class="qopname">
+                   ̂
+                  </mo>
+                 </mover>
+                </mrow>
+                <mo accent="true">
+                 ̲
+                </mo>
+               </munder>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &theta;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mfrac>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  &part;
+                 </mi>
+                 <mi>
+                  &varphi;
+                 </mi>
+                </mrow>
+               </mfrac>
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+              </mtd>
+             </mtr>
+             <mtr>
+              <mtd class="array" columnalign="center">
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mo class="qopname">
+                cos
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="MathClass-bin">
+                &times;
+               </mo>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+              </mtd>
+              <mtd class="array" columnalign="center">
+               <mi>
+                r
+               </mi>
+               <mo class="qopname">
+                sin
+               </mo>
+               <!--nolimits
+-->
+               <mi>
+                &theta;
+               </mi>
+               <mo class="MathClass-bin">
+                &times;
+               </mo>
+               <msup>
+                <mrow>
+                 <mo class="qopname">
+                  sin
+                 </mo>
+                 <!--nolimits
+-->
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+               <mi>
+                &theta;
+               </mi>
+              </mtd>
+             </mtr>
+             <!--ccc
+-->
+            </mtable>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="" open="[" separators="">
+           <mrow>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+                <msup>
+                 <mrow>
+                  <mo class="qopname">
+                   sin
+                  </mo>
+                  <!--nolimits
+-->
+                 </mrow>
+                 <mrow>
+                  <mn>
+                   3
+                  </mn>
+                 </mrow>
+                </msup>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <msup>
+                 <mrow>
+                  <mi>
+                   r
+                  </mi>
+                 </mrow>
+                 <mrow>
+                  <mn>
+                   2
+                  </mn>
+                 </mrow>
+                </msup>
+                <mo class="qopname">
+                 cos
+                </mo>
+                <!--nolimits
+-->
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+                <msup>
+                 <mrow>
+                  <mo class="qopname">
+                   sin
+                  </mo>
+                  <!--nolimits
+-->
+                 </mrow>
+                 <mrow>
+                  <mn>
+                   3
+                  </mn>
+                 </mrow>
+                </msup>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <mi>
+             r
+            </mi>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mfenced close="]" open="" separators="">
+           <mrow>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 &part;
+                </mi>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+              </mfrac>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <msup>
+                 <mrow>
+                  <mi>
+                   r
+                  </mi>
+                 </mrow>
+                 <mrow>
+                  <mn>
+                   2
+                  </mn>
+                 </mrow>
+                </msup>
+                <mo class="qopname">
+                 cos
+                </mo>
+                <!--nolimits
+-->
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+            </mfenced>
+            <mi>
+             r
+            </mi>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mspace class="thinspace" width="0.3em">
+            </mspace>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+               <mo class="qopname">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+          </mfrac>
+          <mfenced close="]" open="[" separators="">
+           <mrow>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mn>
+               3
+              </mn>
+              <mi>
+               r
+              </mi>
+              <msup>
+               <mrow>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+              <mi>
+               &theta;
+              </mi>
+              <mo class="qopname">
+               cos
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               +
+              </mo>
+              <mn>
+               0
+              </mn>
+             </mrow>
+            </mfenced>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 r
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mn>
+               0
+              </mn>
+              <mo class="MathClass-bin">
+               &minus;
+              </mo>
+              <msup>
+               <mrow>
+                <mo class="qopname">
+                 sin
+                </mo>
+                <!--nolimits
+-->
+               </mrow>
+               <mrow>
+                <mn>
+                 3
+                </mn>
+               </mrow>
+              </msup>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfenced>
+            <mi>
+             r
+            </mi>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &theta;
+                </mi>
+               </mrow>
+               <mo class="MathClass-op">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mfenced close=")" open="(" separators="">
+             <mrow>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+              <mo class="MathClass-bin">
+               +
+              </mo>
+              <mi>
+               r
+              </mi>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+            </mfenced>
+            <mi>
+             r
+            </mi>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mspace class="thinspace" width="0.3em">
+            </mspace>
+            <munder accentunder="false" class="mml-underline">
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi>
+                 &varphi;
+                </mi>
+               </mrow>
+               <mo class="qopname">
+                ̂
+               </mo>
+              </mover>
+             </mrow>
+             <mo accent="true">
+              ̲
+             </mo>
+            </munder>
+           </mrow>
+          </mfenced>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd class="eqnarray-1">
+         </mtd>
+         <mtd class="eqnarray-2">
+          <mo class="MathClass-rel">
+           =
+          </mo>
+         </mtd>
+         <mtd class="eqnarray-3">
+          <mfrac>
+           <mrow>
+            <mn>
+             3
+            </mn>
+            <mo class="qopname">
+             sin
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+            <mo class="qopname">
+             cos
+            </mo>
+            <!--nolimits
+-->
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+          </mfrac>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mo class="MathClass-op">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &minus;
+          </mo>
+          <mfrac>
+           <mrow>
+            <msup>
+             <mrow>
+              <mo class="qopname">
+               sin
+              </mo>
+              <!--nolimits
+-->
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+          </mfrac>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="MathClass-op">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mfrac>
+           <mrow>
+            <mrow>
+             <mo class="MathClass-open">
+              (
+             </mo>
+             <mrow>
+              <mn>
+               1
+              </mn>
+              <mo class="MathClass-bin">
+               +
+              </mo>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mo class="MathClass-close">
+              )
+             </mo>
+            </mrow>
+           </mrow>
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+          </mfrac>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &theta;
+          </mi>
+          <mspace class="thinspace" width="0.3em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="qopname">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mtd>
+         <mtd class="eqnarray-4">
+          <mtext class="eqnarray">
+          </mtext>
+         </mtd>
+        </mtr>
+       </mtable>
+      </math>
+      <!--l. 885
+-->
+     </li>
+    </ol>
+    <!--l. 886
+-->
+    <h5 class="likesubsubsectionHead">
+     <a class="btn btn-primary" href="#x9-450006.1" id="x9-450006.1">
+      Task!
+     </a>
+    </h5>
+    <!--l. 887
+-->
+    <p class="noindent">
+     Using spherical polar coordinates, find
+     <!--l. 887
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <munder accentunder="false" class="mml-underline">
+        <mrow>
+         <mo class="MathClass-op">
+          &nabla;
+         </mo>
+        </mrow>
+        <mo accent="true">
+         ̲
+        </mo>
+       </munder>
+       <mi>
+        f
+       </mi>
+      </mrow>
+     </math>
+     for
+    </p>
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-45002x1">
+      <!--l. 890
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         f
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           4
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x9-45004x2">
+      <!--l. 891
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         f
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mfrac>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mn>
+           1
+          </mn>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x9-45006x3">
+      <!--l. 892
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         f
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mn>
+         2
+        </mn>
+        <mi>
+         &theta;
+        </mi>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &varphi;
+        </mi>
+       </mrow>
+      </math>
+     </li>
+    </ol>
+    <!--l. 911
+-->
+    <h5 class="likesubsubsectionHead">
+     <button aria-controls="x9-4600061" aria-expanded="false" class="btn btn-success" data-target="#x9-4600061" data-toggle="collapse" role="button">
+      Answer
+     </button>
+    </h5>
+    <div class="collapse" id="x9-4600061">
+     <!--l. 911
+-->
+     <ol class="enumerate1" start="1">
+      <li class="enumerate" id="x9-46002x1">
+       <!--l. 911
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          4
+         </mn>
+         <msup>
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msup>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mo class="MathClass-op">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+        </mrow>
+       </math>
+       ,
+      </li>
+      <li class="enumerate" id="x9-46004x2">
+       <!--l. 911
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+           <mo class="MathClass-bin">
+            &minus;
+           </mo>
+           <msup>
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+          </mrow>
+          <mrow>
+           <msup>
+            <mrow>
+             <mrow>
+              <mo class="MathClass-open">
+               (
+              </mo>
+              <mrow>
+               <mn>
+                1
+               </mn>
+               <mo class="MathClass-bin">
+                +
+               </mo>
+               <msup>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msup>
+              </mrow>
+              <mo class="MathClass-close">
+               )
+              </mo>
+             </mrow>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+          </mrow>
+         </mfrac>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mo class="MathClass-op">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+        </mrow>
+       </math>
+       ,
+      </li>
+      <li class="enumerate" id="x9-46006x3">
+       <!--l. 911
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mfrac>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+           <mi>
+            r
+           </mi>
+          </mrow>
+         </mfrac>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <msup>
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+           <mo class="qopname">
+            sin
+           </mo>
+           <!--nolimits
+-->
+           <mn>
+            2
+           </mn>
+           <mi>
+            &theta;
+           </mi>
+           <mo class="qopname">
+            cos
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &varphi;
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+         </mfrac>
+         <mfrac>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+           <mi>
+            &theta;
+           </mi>
+          </mrow>
+         </mfrac>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <msup>
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+           <mo class="qopname">
+            sin
+           </mo>
+           <!--nolimits
+-->
+           <mn>
+            2
+           </mn>
+           <mi>
+            &theta;
+           </mi>
+           <mo class="qopname">
+            cos
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &varphi;
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              &varphi;
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+          <mrow>
+           <msup>
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+           <mo class="qopname">
+            sin
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &theta;
+           </mi>
+          </mrow>
+         </mfrac>
+         <mfrac>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            &part;
+           </mi>
+           <mi>
+            &varphi;
+           </mi>
+          </mrow>
+         </mfrac>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <msup>
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+           <mo class="qopname">
+            sin
+           </mo>
+           <!--nolimits
+-->
+           <mn>
+            2
+           </mn>
+           <mi>
+            &theta;
+           </mi>
+           <mo class="qopname">
+            cos
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &varphi;
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+        </mrow>
+       </math>
+       <!--l. 911
+-->
+       <p class="noindent">
+        <!--l. 911
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mspace class="qquad" width="2em">
+          </mspace>
+          <mo class="MathClass-rel">
+           =
+          </mo>
+          <mn>
+           2
+          </mn>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mn>
+           2
+          </mn>
+          <mi>
+           &theta;
+          </mi>
+          <mo class="qopname">
+           cos
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &varphi;
+          </mi>
+          <mspace class="nbsp" width="1em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mo class="qopname">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <mn>
+           2
+          </mn>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           cos
+          </mo>
+          <!--nolimits
+-->
+          <mn>
+           2
+          </mn>
+          <mi>
+           &theta;
+          </mi>
+          <mo class="qopname">
+           cos
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &varphi;
+          </mi>
+          <mspace class="nbsp" width="1em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &theta;
+              </mi>
+             </mrow>
+             <mo class="qopname">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &minus;
+          </mo>
+          <mn>
+           2
+          </mn>
+          <mi>
+           r
+          </mi>
+          <mo class="qopname">
+           cos
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &theta;
+          </mi>
+          <mo class="qopname">
+           sin
+          </mo>
+          <!--nolimits
+-->
+          <mi>
+           &varphi;
+          </mi>
+          <mspace class="nbsp" width="1em">
+          </mspace>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi>
+               &varphi;
+              </mi>
+             </mrow>
+             <mo class="qopname">
+              ̂
+             </mo>
+            </mover>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mrow>
+        </math>
+       </p>
+      </li>
+     </ol>
+    </div>
+    <!--l. 917
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x9-470006.1" id="x9-470006.1">
+      Exercises
+     </a>
+    </h5>
+    <!--l. 918
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x9-47002x1">
+      For
+      <!--l. 921
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         r
+        </mi>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         r
+        </mi>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &varphi;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         r
+        </mi>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &varphi;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &varphi;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      , find
+      <!--l. 923
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         &sdot;
+        </mo>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      and
+      <!--l. 924
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         &times;
+        </mo>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      .
+     </li>
+     <li class="enumerate" id="x9-47004x2">
+      For
+      <!--l. 926
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mo class="MathClass-bin">
+           &minus;
+          </mo>
+          <mn>
+           4
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mo class="MathClass-bin">
+           &minus;
+          </mo>
+          <mn>
+           4
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         sin
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      , find
+      <!--l. 927
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         &sdot;
+        </mo>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      and
+      <!--l. 928
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         &times;
+        </mo>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      .
+     </li>
+     <li class="enumerate" id="x9-47006x3">
+      For
+      <!--l. 929
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mi>
+           F
+          </mi>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           r
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &theta;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mo class="qopname">
+         cos
+        </mo>
+        <!--nolimits
+-->
+        <mi>
+         &varphi;
+        </mi>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi>
+             &theta;
+            </mi>
+           </mrow>
+           <mo class="qopname">
+            ̂
+           </mo>
+          </mover>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+       </mrow>
+      </math>
+      find
+      <!--l. 929
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <munder accentunder="false" class="mml-underline">
+         <mrow>
+          <mo class="MathClass-op">
+           &nabla;
+          </mo>
+         </mrow>
+         <mo accent="true">
+          ̲
+         </mo>
+        </munder>
+        <mo class="MathClass-bin">
+         &sdot;
+        </mo>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mo class="MathClass-op">
+             &nabla;
+            </mo>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+          <mo class="MathClass-bin">
+           &times;
+          </mo>
+          <munder accentunder="false" class="mml-underline">
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ̲
+           </mo>
+          </munder>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+       </mrow>
+      </math>
+      .
+     </li>
+    </ol>
+    <!--l. 947
+-->
+    <h5 class="likesubsubsectionHead">
+     <button aria-controls="x9-4800061" aria-expanded="false" class="btn btn-success" data-target="#x9-4800061" data-toggle="collapse" role="button">
+      Answer
+     </button>
+    </h5>
+    <div class="collapse" id="x9-4800061">
+     <!--l. 947
+-->
+     <ol class="enumerate1" start="1">
+      <li class="enumerate" id="x9-48002x1">
+       <!--l. 947
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mo class="qopname">
+          cos
+         </mo>
+         <!--nolimits
+-->
+         <mi>
+          &varphi;
+         </mi>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <mo class="qopname">
+            cot
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &theta;
+           </mi>
+           <mo class="MathClass-bin">
+            +
+           </mo>
+           <mi>
+            c
+           </mi>
+           <mi>
+            o
+           </mi>
+           <mi>
+            s
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            c
+           </mi>
+           <mi>
+            &theta;
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mn>
+          3
+         </mn>
+         <mo class="qopname">
+          sin
+         </mo>
+         <!--nolimits
+-->
+         <mi>
+          &theta;
+         </mi>
+        </mrow>
+       </math>
+       ,
+       <!--l. 947
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mo class="qopname">
+          cot
+         </mo>
+         <!--nolimits
+-->
+         <mfrac>
+          <mrow>
+           <mi>
+            &theta;
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </mfrac>
+         <mo class="qopname">
+          sin
+         </mo>
+         <!--nolimits
+-->
+         <mi>
+          &varphi;
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          &minus;
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mo class="qopname">
+          sin
+         </mo>
+         <!--nolimits
+-->
+         <mi>
+          &varphi;
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              &theta;
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <mn>
+            2
+           </mn>
+           <mo class="qopname">
+            cos
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &varphi;
+           </mi>
+           <mo class="MathClass-bin">
+            &minus;
+           </mo>
+           <mo class="qopname">
+            cos
+           </mo>
+           <!--nolimits
+-->
+           <mi>
+            &theta;
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              &varphi;
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+        </mrow>
+       </math>
+      </li>
+      <li class="enumerate" id="x9-48004x2">
+       <!--l. 947
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          0
+         </mn>
+        </mrow>
+       </math>
+       ,
+       <!--l. 947
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mo class="MathClass-bin">
+          &minus;
+         </mo>
+         <mn>
+          2
+         </mn>
+         <msup>
+          <mrow>
+           <mi>
+            r
+           </mi>
+          </mrow>
+          <mrow>
+           <mo class="MathClass-bin">
+            &minus;
+           </mo>
+           <mn>
+            5
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="qopname">
+          sin
+         </mo>
+         <!--nolimits
+-->
+         <mi>
+          &theta;
+         </mi>
+         <munder accentunder="false" class="mml-underline">
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi>
+              &varphi;
+             </mi>
+            </mrow>
+            <mo class="qopname">
+             ̂
+            </mo>
+           </mover>
+          </mrow>
+          <mo accent="true">
+           ̲
+          </mo>
+         </munder>
+        </mrow>
+       </math>
+      </li>
+      <li class="enumerate" id="x9-48006x3">
+       <!--l. 947
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          0
+         </mn>
+        </mrow>
+       </math>
+      </li>
+     </ol>
+    </div>
+   </main>
+   <footer>
+    <hr/>
+    Original work was created by
+    <a href="https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/consortium-members/">
+     the HELM consortium.
+    </a>
+    <br/>
+    This work is licensed under a
+    <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+     Creative Commons Attribution-NonCommercial 4.0 International License
+    </a>
+   </footer>
+   <nav aria-labelledby="botnav">
+    <div id="botnav">
+     [
+     <a href="28_3_orthog_cvlnr_coords-webse5.html">
+      prev
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-webse5.html#tail28_3_orthog_cvlnr_coords-webse5.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-webse6.html">
+      front
+     </a>
+     ] [
+     <a href="28_3_orthog_cvlnr_coords-web.html#28_3_orthog_cvlnr_coords-webse6.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <a id="tail28_3_orthog_cvlnr_coords-webse6.html">
+   </a>
+  </div>
+ </body>
+</html>

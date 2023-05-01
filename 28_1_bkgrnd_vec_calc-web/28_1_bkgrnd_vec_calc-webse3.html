@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="HTML Tidy for HTML5 for Linux version 5.2.0" name="generator"/>
+  <title>
+   Scalar fields
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; minimum-scale=1.0; user-scalable=yes;" name="viewport"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+  <link href="28_1_bkgrnd_vec_calc-web.css" rel="stylesheet" type="text/css"/>
+  <link href="additional.css" rel="stylesheet" type="text/css"/>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ mml2jax: { preview: ["[maths rendering]"]}, 
+  "fast-preview": {disabled: true}, 
+  explorer:{ subtitle: true }, 
+  displayAlign: "center",  
+  MatchWebFonts: { 
+  matchFor: { "HTML-CSS": true, NativeMML: false, SVG: false }, 
+  fontCheckDelay: 2000, 
+  fontCheckTimeout: 30 * 1000 
+  }, 
+  "HTML-CSS": { 
+  preferredFont: "STIX",  
+  availableFonts: ["STIX","TeX"],  
+  webFont: "STIX-Web",  
+  linebreaks: { automatic: true, width: "90% container" } 
+  }, 
+  SVG: {  
+  font: "STIX-Web", 
+  linebreaks: { automatic: false, width: "90% container" } 
+  }, 
+  menuSettings: { collapsible: false, autocollapse: false, explorer: false } 
+  });
+  </script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Register.MessageHook("End Math", function (msg) { 
+  var nodes = Array.from(msg[1].querySelectorAll('.MJX_Assistive_MathML [id]')); 
+  while (nodes.length) { 
+  nodes.shift().removeAttribute('id'); 
+  } 
+  }, 20);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full" type="text/javascript">
+  </script>
+  <style type="text/css">
+   ".MathJax_MathML" {text-indent: 0;}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3KVNKQ1MQ">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3KVNKQ1MQ');
+  </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <link href="toplayer.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="container">
+   <nav aria-labelledby="topnav">
+    <div id="topnav">
+     [
+     <a href="#main">
+      Skip navigation
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse4.html">
+      next
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse2.html">
+      prev
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse2.html#tail28_1_bkgrnd_vec_calc-webse2.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="#tail28_1_bkgrnd_vec_calc-webse3.html">
+      tail
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-web.html#28_1_bkgrnd_vec_calc-webse3.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <main id="main" role="main">
+    <h3 class="sectionHead">
+     <span class="titlemark">
+      3
+     </span>
+     <a href="28_1_bkgrnd_vec_calc-web.html#QQ2-6-23" id="x6-230003">
+      Scalar fields
+     </a>
+    </h3>
+    <!--l. 419
+-->
+    <p class="noindent">
+     A
+     <strong>
+      scalar field
+     </strong>
+     is a distribution of scalar values over a region of space (which may be 1D, 2D or 3D) so that a scalar value is associated with each point of space. Examples of scalar fields follow.
+    </p>
+    <!--l. 423
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x6-23002x1">
+      <!--l. 425
+-->
+      <p class="noindent">
+       <strong>
+        Figure 2:
+       </strong>
+      </p>
+      <!--l. 427
+-->
+      <p class="noindent">
+       <img alt="{Temperature in a plate, one side held at 100 degrees C the other at 0 degrees C}" src="./figures/pdf/Fig3713.svg"/>
+      </p>
+     </li>
+     <li class="enumerate" id="x6-23004x2">
+      <!--l. 432
+-->
+      <p class="noindent">
+       <strong>
+        Figure 3:
+       </strong>
+      </p>
+      <!--l. 434
+-->
+      <p class="noindent">
+       <img alt="{Height of land above sea level}" src="./figures/pdf/Fig3714.svg"/>
+      </p>
+     </li>
+     <li class="enumerate" id="x6-23006x3">
+      The mean annual rainfall at different locations in Britain.
+     </li>
+     <li class="enumerate" id="x6-23008x4">
+      The light intensity near a 100 watt light bulb.
+     </li>
+    </ol>
+    <!--l. 440
+-->
+    <p class="noindent">
+     To define a
+     <strong>
+      scalar field
+     </strong>
+     we need to:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      Describe the region of space where it is found (this is the
+      <strong>
+       domain
+      </strong>
+      )
+     </li>
+     <li class="itemize">
+      Give a rule to show how the value of the scalar is related to every point in the domain.
+     </li>
+    </ul>
+    <!--l. 446
+-->
+    <p class="noindent">
+     Consider the scalar field defined by
+     <!--l. 446
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          x
+         </mi>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mi>
+          y
+         </mi>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mi>
+        x
+       </mi>
+       <mo class="MathClass-bin">
+        +
+       </mo>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     over the rectangle
+     <!--l. 447
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        0
+       </mn>
+       <mo class="MathClass-rel">
+        &le;
+       </mo>
+       <mi>
+        x
+       </mi>
+       <mo class="MathClass-rel">
+        &le;
+       </mo>
+       <mn>
+        4
+       </mn>
+      </mrow>
+     </math>
+     ,
+     <!--l. 447
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        0
+       </mn>
+       <mo class="MathClass-rel">
+        &le;
+       </mo>
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel">
+        &le;
+       </mo>
+       <mn>
+        2
+       </mn>
+      </mrow>
+     </math>
+     . We can calculate, and plot, values of
+     <!--l. 448
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+      </mrow>
+     </math>
+     at different
+     <!--l. 448
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          x
+         </mi>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mi>
+          y
+         </mi>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+      </mrow>
+     </math>
+     points. For example
+     <!--l. 449
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mn>
+          0
+         </mn>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mn>
+          2
+         </mn>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        0
+       </mn>
+       <mo class="MathClass-bin">
+        +
+       </mo>
+       <mn>
+        2
+       </mn>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        2
+       </mn>
+      </mrow>
+     </math>
+     ,
+     <!--l. 449
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mn>
+          4
+         </mn>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mn>
+          1
+         </mn>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        4
+       </mn>
+       <mo class="MathClass-bin">
+        +
+       </mo>
+       <mn>
+        1
+       </mn>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        5
+       </mn>
+      </mrow>
+     </math>
+     and so on.
+    </p>
+    <!--l. 451
+-->
+    <p class="noindent">
+     <strong>
+      Figure 4:
+     </strong>
+    </p>
+    <!--l. 453
+-->
+    <p class="noindent">
+     <img alt="{The scalar field phi(x,y)=x+y}" src="./figures/pdf/Fig3715.svg"/>
+    </p>
+    <!--l. 456
+-->
+    <p class="noindent">
+     <strong>
+      Contours
+     </strong>
+    </p>
+    <!--l. 458
+-->
+    <p class="noindent">
+     A contour on a map is a curve joining points that are the same height above sea level. These contours give far more information about the shape of the land than selected spot heights.
+    </p>
+    <!--l. 462
+-->
+    <p class="noindent">
+     For example, the contours near the top of a hill might look like those shown in Figure 5 where the numbers are the values of the heights above sea level.
+    </p>
+    <!--l. 465
+-->
+    <p class="noindent">
+     In general for a scalar field
+     <!--l. 465
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          x
+         </mi>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mi>
+          y
+         </mi>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <mi>
+          z
+         </mi>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+      </mrow>
+     </math>
+     , contour curves are the family of curves given by
+     <!--l. 466
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        &varphi;
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mi>
+        c
+       </mi>
+      </mrow>
+     </math>
+     , for different values of the constant
+     <!--l. 467
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        c
+       </mi>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 469
+-->
+    <p class="noindent">
+     <strong>
+      Figure 5:
+     </strong>
+    </p>
+    <!--l. 471
+-->
+    <p class="noindent">
+     <img alt="{Contour lines}" src="./figures/pdf/Fig3716.svg"/>
+    </p>
+    <!--l. 475
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x6-240003" id="x6-240003">
+      Example 6
+     </a>
+    </h5>
+    <!--l. 476
+-->
+    <p class="noindent">
+     Describe contour curves for the following scalar fields and sketch typical contours for 1. and 2.
+    </p>
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x6-24002x1">
+      <!--l. 478
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         x
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         y
+        </mi>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x6-24004x2">
+      <!--l. 479
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         9
+        </mn>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x6-24006x3">
+      <!--l. 480
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi>
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             y
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             z
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+     </li>
+    </ol>
+    <!--l. 506
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x6-250003" id="x6-250003">
+      Solution
+     </a>
+    </h5>
+    <!--l. 506
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x6-25002x1">
+      The contour curves for
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         x
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         y
+        </mi>
+       </mrow>
+      </math>
+      are
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         x
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         c
+        </mi>
+       </mrow>
+      </math>
+      or
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <mi>
+         x
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mi>
+         c
+        </mi>
+       </mrow>
+      </math>
+      .
+      <br class="newline"/>
+      <br/>
+      These are straight lines of gradient
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <mn>
+         1
+        </mn>
+       </mrow>
+      </math>
+      . See Figure 6(a).
+     </li>
+     <li class="enumerate" id="x6-25004x2">
+      For
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         9
+        </mn>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      , the contour curves are
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mn>
+         9
+        </mn>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         c
+        </mi>
+       </mrow>
+      </math>
+      , or
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         9
+        </mn>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <mi>
+         c
+        </mi>
+       </mrow>
+      </math>
+      . See Figure 6(b). These are circles, centered at the origin, radius
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <msqrt>
+         <mrow>
+          <mn>
+           9
+          </mn>
+          <mo class="MathClass-bin">
+           &minus;
+          </mo>
+          <mi>
+           c
+          </mi>
+         </mrow>
+        </msqrt>
+       </mrow>
+      </math>
+      .
+      <!--l. 506
+-->
+      <p class="noindent">
+       <strong>
+        Figure 6:
+       </strong>
+      </p>
+      <!--l. 506
+-->
+      <p class="noindent">
+       <img alt="{Contours for (a) x+y (b) 9-x squared -y squared }" src="./figures/pdf/Fig3717.svg"/>
+      </p>
+     </li>
+     <li class="enumerate" id="x6-25006x3">
+      For the three-dimensional scalar field
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           y
+          </mi>
+          <mo class="MathClass-punc">
+           ,
+          </mo>
+          <mi>
+           z
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi>
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             y
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             z
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+      the contour surfaces are
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi>
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             y
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+          <mo class="MathClass-bin">
+           +
+          </mo>
+          <msup>
+           <mrow>
+            <mi>
+             z
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfrac>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         c
+        </mi>
+       </mrow>
+      </math>
+      or
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           z
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           c
+          </mi>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+      . These are spheres, centered at the origin and of radius
+      <!--l. 506
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mrow>
+          <msqrt>
+           <mrow>
+            <mi>
+             c
+            </mi>
+           </mrow>
+          </msqrt>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+      .
+     </li>
+    </ol>
+    <!--l. 508
+-->
+    <h5 class="likesubsubsectionHead">
+     <a class="btn btn-primary" href="#x6-260003" id="x6-260003">
+      Task!
+     </a>
+    </h5>
+    <!--l. 509
+-->
+    <p class="noindent">
+     Describe the contours for the following scalar fields
+    </p>
+    <!--l. 510
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x6-26002x1">
+      <!--l. 511
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <mi>
+         x
+        </mi>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x6-26004x2">
+      <!--l. 511
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+     </li>
+     <li class="enumerate" id="x6-26006x3">
+      <!--l. 511
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         &varphi;
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-bin">
+         &minus;
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+     </li>
+    </ol>
+    <!--l. 522
+-->
+    <h5 class="likesubsubsectionHead">
+     <button aria-controls="x6-270003" aria-expanded="false" class="btn btn-success" data-target="#x6-270003" data-toggle="collapse" role="button">
+      Answer
+     </button>
+    </h5>
+    <div class="collapse" id="x6-270003">
+     <!--l. 522
+-->
+     <ol class="enumerate1" start="1">
+      <li class="enumerate" id="x6-27002x1">
+       Straight lines of gradient
+       <!--l. 522
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          1
+         </mn>
+        </mrow>
+       </math>
+       ,
+      </li>
+      <li class="enumerate" id="x6-27004x2">
+       Circles; centred at origin,
+      </li>
+      <li class="enumerate" id="x6-27006x3">
+       Parabolas
+       <!--l. 522
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mi>
+          y
+         </mi>
+         <mo class="MathClass-rel">
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mi>
+          c
+         </mi>
+        </mrow>
+       </math>
+       .
+      </li>
+     </ol>
+     <div class="framed">
+      <!--l. 525
+-->
+      <h5 class="likesubsubsectionHead">
+       <a href="#x6-280003" id="x6-280003">
+        Key Point 1
+       </a>
+      </h5>
+      <!--l. 525
+-->
+      <p class="noindent">
+       A scalar field
+       <!--l. 525
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mi>
+          F
+         </mi>
+        </mrow>
+       </math>
+       (in three-dimensional space) returns a real value for the function
+       <!--l. 525
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mi>
+          F
+         </mi>
+        </mrow>
+       </math>
+       for every point
+       <!--l. 525
+-->
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <mi>
+            x
+           </mi>
+           <mo class="MathClass-punc">
+            ,
+           </mo>
+           <mi>
+            y
+           </mi>
+           <mo class="MathClass-punc">
+            ,
+           </mo>
+           <mi>
+            z
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+        </mrow>
+       </math>
+       in the domain of the field.
+      </p>
+     </div>
+    </div>
+   </main>
+   <footer>
+    <hr/>
+    Original work was created by
+    <a href="https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/consortium-members/">
+     the HELM consortium.
+    </a>
+    <br/>
+    This work is licensed under a
+    <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+     Creative Commons Attribution-NonCommercial 4.0 International License
+    </a>
+   </footer>
+   <nav aria-labelledby="botnav">
+    <div id="botnav">
+     [
+     <a href="28_1_bkgrnd_vec_calc-webse4.html">
+      next
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse2.html">
+      prev
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse2.html#tail28_1_bkgrnd_vec_calc-webse2.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-webse3.html">
+      front
+     </a>
+     ] [
+     <a href="28_1_bkgrnd_vec_calc-web.html#28_1_bkgrnd_vec_calc-webse3.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <a id="tail28_1_bkgrnd_vec_calc-webse3.html">
+   </a>
+  </div>
+ </body>
+</html>

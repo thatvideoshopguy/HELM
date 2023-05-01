@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="HTML Tidy for HTML5 for Linux version 5.2.0" name="generator"/>
+  <title>
+   Finding the gradient at a general point
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; minimum-scale=1.0; user-scalable=yes;" name="viewport"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+  <link href="11_1_intro_diffrntiatn-web.css" rel="stylesheet" type="text/css"/>
+  <link href="additional.css" rel="stylesheet" type="text/css"/>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ mml2jax: { preview: ["[maths rendering]"]}, 
+  "fast-preview": {disabled: true}, 
+  explorer:{ subtitle: true }, 
+  displayAlign: "center",  
+  MatchWebFonts: { 
+  matchFor: { "HTML-CSS": true, NativeMML: false, SVG: false }, 
+  fontCheckDelay: 2000, 
+  fontCheckTimeout: 30 * 1000 
+  }, 
+  "HTML-CSS": { 
+  preferredFont: "STIX",  
+  availableFonts: ["STIX","TeX"],  
+  webFont: "STIX-Web",  
+  linebreaks: { automatic: true, width: "90% container" } 
+  }, 
+  SVG: {  
+  font: "STIX-Web", 
+  linebreaks: { automatic: false, width: "90% container" } 
+  }, 
+  menuSettings: { collapsible: false, autocollapse: false, explorer: false } 
+  });
+  </script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Register.MessageHook("End Math", function (msg) { 
+  var nodes = Array.from(msg[1].querySelectorAll('.MJX_Assistive_MathML [id]')); 
+  while (nodes.length) { 
+  nodes.shift().removeAttribute('id'); 
+  } 
+  }, 20);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full" type="text/javascript">
+  </script>
+  <style type="text/css">
+   ".MathJax_MathML" {text-indent: 0;}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3KVNKQ1MQ">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3KVNKQ1MQ');
+  </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <link href="toplayer.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="container">
+   <nav aria-labelledby="topnav">
+    <div id="topnav">
+     [
+     <a href="#main">
+      Skip navigation
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse4.html">
+      next
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse2.html">
+      prev
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse2.html#tail11_1_intro_diffrntiatn-webse2.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="#tail11_1_intro_diffrntiatn-webse3.html">
+      tail
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-web.html#11_1_intro_diffrntiatn-webse3.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <main id="main" role="main">
+    <h3 class="sectionHead">
+     <span class="titlemark">
+      3
+     </span>
+     <a href="11_1_intro_diffrntiatn-web.html#QQ2-6-12" id="x6-120003">
+      Finding the gradient at a general point
+     </a>
+    </h3>
+    <!--l. 251
+-->
+    <p class="noindent">
+     We now carry out the previous procedure more mathematically. Consider the graph of
+     <!--l. 252
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     in Figure 6. Let point
+     <!--l. 252
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+      </mrow>
+     </math>
+     be any point with coordinates
+     <!--l. 253
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          a
+         </mi>
+         <mo class="MathClass-punc">
+          ,
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            a
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+      </mrow>
+     </math>
+     , and let point
+     <!--l. 253
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        B
+       </mi>
+      </mrow>
+     </math>
+     be a second point with
+     <!--l. 253
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     coordinate
+     <!--l. 254
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mrow>
+        <mo class="MathClass-open">
+         (
+        </mo>
+        <mrow>
+         <mi>
+          a
+         </mi>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mi>
+          h
+         </mi>
+        </mrow>
+        <mo class="MathClass-close">
+         )
+        </mo>
+       </mrow>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 256
+-->
+    <p class="noindent">
+     The
+     <!--l. 256
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     coordinate at
+     <!--l. 256
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+      </mrow>
+     </math>
+     is
+     <!--l. 256
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <msup>
+        <mrow>
+         <mi>
+          a
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     , because
+     <!--l. 256
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+      </mrow>
+     </math>
+     lies on the graph
+     <!--l. 256
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 258
+-->
+    <p class="noindent">
+     Similarly the
+     <!--l. 258
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     coordinate at
+     <!--l. 258
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        B
+       </mi>
+      </mrow>
+     </math>
+     is
+     <!--l. 258
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <msup>
+        <mrow>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <mi>
+            a
+           </mi>
+           <mo class="MathClass-bin">
+            +
+           </mo>
+           <mi>
+            h
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 260
+-->
+    <p class="noindent">
+     Therefore the gradient of the chord
+     <!--l. 260
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+       <mi>
+        B
+       </mi>
+      </mrow>
+     </math>
+     is
+    </p>
+    <div class="math-block" data-custom-style="Normal">
+     <!--l. 261
+-->
+     <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mfrac>
+        <mrow>
+         <msup>
+          <mrow>
+           <mrow>
+            <mo class="MathClass-open">
+             (
+            </mo>
+            <mrow>
+             <mi>
+              a
+             </mi>
+             <mo class="MathClass-bin">
+              +
+             </mo>
+             <mi>
+              h
+             </mi>
+            </mrow>
+            <mo class="MathClass-close">
+             )
+            </mo>
+           </mrow>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin">
+          &minus;
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            a
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+        <mrow>
+         <mi>
+          h
+         </mi>
+        </mrow>
+       </mfrac>
+      </mrow>
+     </math>
+    </div>
+    <!--l. 264
+-->
+    <p class="noindent">
+     This simplifies to
+    </p>
+    <div class="math-block" data-custom-style="Normal">
+     <!--l. 265
+-->
+     <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mfrac>
+        <mrow>
+         <msup>
+          <mrow>
+           <mi>
+            a
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mi>
+          h
+         </mi>
+         <mi>
+          a
+         </mi>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            h
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin">
+          &minus;
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            a
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+        <mrow>
+         <mi>
+          h
+         </mi>
+        </mrow>
+       </mfrac>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mfrac>
+        <mrow>
+         <mn>
+          2
+         </mn>
+         <mi>
+          h
+         </mi>
+         <mi>
+          a
+         </mi>
+         <mo class="MathClass-bin">
+          +
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            h
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mrow>
+        <mrow>
+         <mi>
+          h
+         </mi>
+        </mrow>
+       </mfrac>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mfrac>
+        <mrow>
+         <mi>
+          h
+         </mi>
+         <mrow>
+          <mo class="MathClass-open">
+           (
+          </mo>
+          <mrow>
+           <mn>
+            2
+           </mn>
+           <mi>
+            a
+           </mi>
+           <mo class="MathClass-bin">
+            +
+           </mo>
+           <mi>
+            h
+           </mi>
+          </mrow>
+          <mo class="MathClass-close">
+           )
+          </mo>
+         </mrow>
+        </mrow>
+        <mrow>
+         <mi>
+          h
+         </mi>
+        </mrow>
+       </mfrac>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        2
+       </mn>
+       <mi>
+        a
+       </mi>
+       <mo class="MathClass-bin">
+        +
+       </mo>
+       <mi>
+        h
+       </mi>
+      </mrow>
+     </math>
+    </div>
+    This is the gradient of the line
+    <!--l. 266
+-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+      <mi>
+       A
+      </mi>
+      <mi>
+       B
+      </mi>
+     </mrow>
+    </math>
+    . As we let
+    <!--l. 267
+-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+      <mi>
+       B
+      </mi>
+     </mrow>
+    </math>
+    move closer to
+    <!--l. 267
+-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+      <mi>
+       A
+      </mi>
+     </mrow>
+    </math>
+    the value of
+    <!--l. 268
+-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+      <mi>
+       h
+      </mi>
+     </mrow>
+    </math>
+    gets smaller and smaller and eventually tends to zero. We write this as
+    <!--l. 269
+-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+      <mi>
+       h
+      </mi>
+      <mo class="MathClass-rel">
+       &rarr;
+      </mo>
+      <mn>
+       0
+      </mn>
+     </mrow>
+    </math>
+    .
+    <!--l. 271
+-->
+    <p class="noindent">
+     Now, as
+     <!--l. 271
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        h
+       </mi>
+       <mo class="MathClass-rel">
+        &rarr;
+       </mo>
+       <mn>
+        0
+       </mn>
+      </mrow>
+     </math>
+     , the gradient of
+     <!--l. 271
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+       <mi>
+        B
+       </mi>
+      </mrow>
+     </math>
+     tends to
+     <!--l. 271
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mi>
+        a
+       </mi>
+      </mrow>
+     </math>
+     . Thus the gradient of the tangent to the curve at point
+     <!--l. 272
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+      </mrow>
+     </math>
+     is
+     <!--l. 272
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mi>
+        a
+       </mi>
+      </mrow>
+     </math>
+     . Because
+     <!--l. 272
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        A
+       </mi>
+      </mrow>
+     </math>
+     is an arbitrary point, this result gives us a formula for finding the gradient of the graph of
+     <!--l. 274
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     at any point:
+     <strong>
+      the gradient is simply twice the
+      <!--l. 275
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         x
+        </mi>
+       </mrow>
+      </math>
+      coordinate there
+     </strong>
+     . For example when
+     <!--l. 275
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        3
+       </mn>
+      </mrow>
+     </math>
+     the gradient is
+     <!--l. 275
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mo class="MathClass-bin">
+        &times;
+       </mo>
+       <mn>
+        3
+       </mn>
+      </mrow>
+     </math>
+     , that is 6, and when
+     <!--l. 276
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <mn>
+        1
+       </mn>
+      </mrow>
+     </math>
+     the gradient is
+     <!--l. 276
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mo class="MathClass-bin">
+        &times;
+       </mo>
+       <mn>
+        1
+       </mn>
+      </mrow>
+     </math>
+     , that is 2 as we saw in the previous subsection.
+    </p>
+    <!--l. 280
+-->
+    <p class="noindent">
+     <strong>
+      Figure 6
+     </strong>
+    </p>
+    <!--l. 282
+-->
+    <p class="noindent">
+     <img alt="No alt text was set. Please request alt text from the person who provided you with this resource." src="./figures/pdf/temp3.svg"/>
+    </p>
+    <!--l. 288
+-->
+    <p class="noindent">
+     Generally, at a point whose coordinate is
+     <!--l. 288
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     the gradient is given by
+     <!--l. 288
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     . The function,
+     <!--l. 288
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mn>
+        2
+       </mn>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     which gives the gradient of
+     <!--l. 289
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel">
+        =
+       </mo>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     is called the
+     <strong>
+      derivative
+     </strong>
+     of
+     <!--l. 289
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     with respect to
+     <!--l. 290
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     . It has other names too including the
+     <strong>
+      rate of change
+     </strong>
+     of
+     <!--l. 290
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     with respect to
+     <!--l. 291
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     .
+    </p>
+    <!--l. 294
+-->
+    <p class="noindent">
+     A special notation is used to represent the derivative. It is not a particularly user-friendly notation but it is important to get used to it anyway. We write the derivative as
+     <!--l. 296
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mfrac>
+        <mrow>
+         <mi>
+          d
+         </mi>
+         <mi>
+          y
+         </mi>
+        </mrow>
+        <mrow>
+         <mi>
+          d
+         </mi>
+         <mi>
+          x
+         </mi>
+        </mrow>
+       </mfrac>
+      </mrow>
+     </math>
+     , pronounced &lsquo;dee
+     <!--l. 296
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     over dee
+     <!--l. 296
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     &rsquo; or &lsquo;dee
+     <!--l. 297
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     by dee
+     <!--l. 297
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     &rsquo;&nbsp;or even &lsquo;dee
+     <!--l. 297
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        y
+       </mi>
+      </mrow>
+     </math>
+     , dee
+     <!--l. 297
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        x
+       </mi>
+      </mrow>
+     </math>
+     &rsquo;.
+    </p>
+    <!--l. 299
+-->
+    <p class="noindent">
+     <!--l. 299
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mfrac>
+        <mrow>
+         <mi>
+          d
+         </mi>
+         <mi>
+          y
+         </mi>
+        </mrow>
+        <mrow>
+         <mi>
+          d
+         </mi>
+         <mi>
+          x
+         </mi>
+        </mrow>
+       </mfrac>
+      </mrow>
+     </math>
+     is not a fraction - so you can&rsquo;t do things like cancel the
+     <!--l. 300
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <mi>
+        d
+       </mi>
+      </mrow>
+     </math>
+     &rsquo;s - just remember that it is the symbol or notation for the derivative. An alternative notation for the derivative is
+     <!--l. 301
+-->
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+       <msup>
+        <mrow>
+         <mi>
+          y
+         </mi>
+        </mrow>
+        <mrow>
+         <mi>
+          &prime;
+         </mi>
+        </mrow>
+       </msup>
+      </mrow>
+     </math>
+     .
+    </p>
+    <div class="framed">
+     <!--l. 307
+-->
+     <h5 class="likesubsubsectionHead">
+      <a href="#x6-130003" id="x6-130003">
+       Key Point 2
+      </a>
+     </h5>
+     <!--l. 307
+-->
+     <p class="noindent">
+      The derivative of&nbsp;
+      <!--l. 307
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+       </mrow>
+      </math>
+      &nbsp;is written&nbsp;
+      <!--l. 307
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           x
+          </mi>
+         </mrow>
+        </mfrac>
+       </mrow>
+      </math>
+      &nbsp;or&nbsp;
+      <!--l. 307
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &prime;
+          </mi>
+         </mrow>
+        </msup>
+        <mrow>
+         <mo class="MathClass-open">
+          (
+         </mo>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mo class="MathClass-close">
+          )
+         </mo>
+        </mrow>
+       </mrow>
+      </math>
+      or simply&nbsp;
+      <!--l. 307
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <msup>
+         <mrow>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           &prime;
+          </mi>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+     </p>
+    </div>
+    <!--l. 310
+-->
+    <h5 class="likesubsubsectionHead">
+     <a href="#x6-140003" id="x6-140003">
+      Exercises
+     </a>
+    </h5>
+    <!--l. 314
+-->
+    <ol class="enumerate1" start="1">
+     <li class="enumerate" id="x6-14002x1">
+      Carry out the procedure above for the function
+      <!--l. 316
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         3
+        </mn>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      :
+      <!--l. 318
+-->
+      <!--l. 320
+-->
+      <ol class="enumerate2" start="1">
+       <li class="enumerate" id="x6-14004x1">
+        Let
+        <!--l. 321
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </math>
+        be the point
+        <!--l. 321
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mrow>
+           <mo class="MathClass-open">
+            (
+           </mo>
+           <mrow>
+            <mi>
+             a
+            </mi>
+            <mo class="MathClass-punc">
+             ,
+            </mo>
+            <mn>
+             3
+            </mn>
+            <msup>
+             <mrow>
+              <mi>
+               a
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+           <mo class="MathClass-close">
+            )
+           </mo>
+          </mrow>
+         </mrow>
+        </math>
+        .
+        <!--l. 323
+-->
+       </li>
+       <li class="enumerate" id="x6-14006x2">
+        Let
+        <!--l. 323
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           B
+          </mi>
+         </mrow>
+        </math>
+        be the point
+        <!--l. 323
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mrow>
+           <mo class="MathClass-open">
+            (
+           </mo>
+           <mrow>
+            <mi>
+             a
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mi>
+             h
+            </mi>
+            <mo class="MathClass-punc">
+             ,
+            </mo>
+            <mn>
+             3
+            </mn>
+            <msup>
+             <mrow>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 a
+                </mi>
+                <mo class="MathClass-bin">
+                 +
+                </mo>
+                <mi>
+                 h
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+           <mo class="MathClass-close">
+            )
+           </mo>
+          </mrow>
+         </mrow>
+        </math>
+        .
+        <!--l. 325
+-->
+       </li>
+       <li class="enumerate" id="x6-14008x3">
+        Find the gradient of the line
+        <!--l. 325
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+          <mi>
+           B
+          </mi>
+         </mrow>
+        </math>
+        .
+        <!--l. 327
+-->
+       </li>
+       <li class="enumerate" id="x6-14010x4">
+        Let
+        <!--l. 327
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           h
+          </mi>
+          <mo class="MathClass-rel">
+           &rarr;
+          </mo>
+          <mn>
+           0
+          </mn>
+         </mrow>
+        </math>
+        to find the gradient of the curve at
+        <!--l. 327
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </math>
+        .
+        <!--l. 329
+-->
+       </li>
+      </ol>
+     </li>
+     <li class="enumerate" id="x6-14012x2">
+      Carry out the procedure above for the function
+      <!--l. 331
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           3
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      :
+      <!--l. 333
+-->
+      <ol class="enumerate2" start="1">
+       <li class="enumerate" id="x6-14014x1">
+        Let
+        <!--l. 334
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </math>
+        be the point
+        <!--l. 334
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mrow>
+           <mo class="MathClass-open">
+            (
+           </mo>
+           <mrow>
+            <mi>
+             a
+            </mi>
+            <mo class="MathClass-punc">
+             ,
+            </mo>
+            <msup>
+             <mrow>
+              <mi>
+               a
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               3
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+           <mo class="MathClass-close">
+            )
+           </mo>
+          </mrow>
+         </mrow>
+        </math>
+        .
+        <!--l. 336
+-->
+       </li>
+       <li class="enumerate" id="x6-14016x2">
+        Let
+        <!--l. 336
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           B
+          </mi>
+         </mrow>
+        </math>
+        be the point
+        <!--l. 336
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mrow>
+           <mo class="MathClass-open">
+            (
+           </mo>
+           <mrow>
+            <mi>
+             a
+            </mi>
+            <mo class="MathClass-bin">
+             +
+            </mo>
+            <mi>
+             h
+            </mi>
+            <mo class="MathClass-punc">
+             ,
+            </mo>
+            <msup>
+             <mrow>
+              <mrow>
+               <mo class="MathClass-open">
+                (
+               </mo>
+               <mrow>
+                <mi>
+                 a
+                </mi>
+                <mo class="MathClass-bin">
+                 +
+                </mo>
+                <mi>
+                 h
+                </mi>
+               </mrow>
+               <mo class="MathClass-close">
+                )
+               </mo>
+              </mrow>
+             </mrow>
+             <mrow>
+              <mn>
+               3
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+           <mo class="MathClass-close">
+            )
+           </mo>
+          </mrow>
+         </mrow>
+        </math>
+        .
+        <!--l. 338
+-->
+       </li>
+       <li class="enumerate" id="x6-14018x3">
+        Find the gradient of the line
+        <!--l. 338
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+          <mi>
+           B
+          </mi>
+         </mrow>
+        </math>
+        .
+        <!--l. 340
+-->
+       </li>
+       <li class="enumerate" id="x6-14020x4">
+        Let
+        <!--l. 340
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           h
+          </mi>
+          <mo class="MathClass-rel">
+           &rarr;
+          </mo>
+          <mn>
+           0
+          </mn>
+         </mrow>
+        </math>
+        to find the gradient of the curve at
+        <!--l. 340
+-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </math>
+        .
+       </li>
+      </ol>
+     </li>
+    </ol>
+    <!--l. 348
+-->
+    <h5 class="likesubsubsectionHead">
+     <button aria-controls="x6-150003" aria-expanded="false" class="btn btn-success" data-target="#x6-150003" data-toggle="collapse" role="button">
+      Answer
+     </button>
+    </h5>
+    <div class="collapse" id="x6-150003">
+     <!--l. 348
+-->
+     <p class="noindent">
+      1. gradient
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         A
+        </mi>
+        <mi>
+         B
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         6
+        </mn>
+        <mi>
+         a
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mn>
+         3
+        </mn>
+        <mi>
+         h
+        </mi>
+       </mrow>
+      </math>
+      , gradient at
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         A
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         6
+        </mn>
+        <mi>
+         a
+        </mi>
+       </mrow>
+      </math>
+      . So, if
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         3
+        </mn>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      ,
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           x
+          </mi>
+         </mrow>
+        </mfrac>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         6
+        </mn>
+        <mi>
+         x
+        </mi>
+       </mrow>
+      </math>
+      ,
+     </p>
+     <!--l. 348
+-->
+     <p class="noindent">
+      2. gradient
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         A
+        </mi>
+        <mi>
+         B
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         3
+        </mn>
+        <msup>
+         <mrow>
+          <mi>
+           a
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <mn>
+         3
+        </mn>
+        <mi>
+         a
+        </mi>
+        <mi>
+         h
+        </mi>
+        <mo class="MathClass-bin">
+         +
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           h
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      , gradient at
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         A
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         3
+        </mn>
+        <msup>
+         <mrow>
+          <mi>
+           a
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      . So, if
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mi>
+         y
+        </mi>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           3
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      ,
+      <!--l. 348
+-->
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           y
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+          <mi>
+           x
+          </mi>
+         </mrow>
+        </mfrac>
+        <mo class="MathClass-rel">
+         =
+        </mo>
+        <mn>
+         3
+        </mn>
+        <msup>
+         <mrow>
+          <mi>
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </math>
+      .
+     </p>
+    </div>
+   </main>
+   <footer>
+    <hr/>
+    Original work was created by
+    <a href="https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/consortium-members/">
+     the HELM consortium.
+    </a>
+    <br/>
+    This work is licensed under a
+    <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+     Creative Commons Attribution-NonCommercial 4.0 International License
+    </a>
+   </footer>
+   <nav aria-labelledby="botnav">
+    <div id="botnav">
+     [
+     <a href="11_1_intro_diffrntiatn-webse4.html">
+      next
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse2.html">
+      prev
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse2.html#tail11_1_intro_diffrntiatn-webse2.html">
+      prev-tail
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-webse3.html">
+      front
+     </a>
+     ] [
+     <a href="11_1_intro_diffrntiatn-web.html#11_1_intro_diffrntiatn-webse3.html">
+      up
+     </a>
+     ]
+    </div>
+   </nav>
+   <a id="tail11_1_intro_diffrntiatn-webse3.html">
+   </a>
+  </div>
+ </body>
+</html>
